@@ -3,10 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: roboto, sans-serif;
-    background-color: #101010;
+    /* background-color: #101010; */
 }
 
+body{
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .top_bar{
+    width: 100%;
     background: black;
     padding: 29px 140px;
     display: flex;
@@ -42,7 +49,6 @@ a i{
     padding: 11px 16px;
     border-radius: 8px;
 }
-
 .right i{
     color: white;
     padding: 12px;
@@ -50,58 +56,167 @@ a i{
     border-radius: 50%;
 }
 
-
-.banner{
-    img{
-        width: 100%;
-    }
+.banner img{
+    width: 100%;
 }
+
 .games_featured{
     display: flex;
     flex-direction: column;
     align-items: center;    
-    margin: 80px 140px;
+    margin: 112px 140px;
+    gap: 64px;
+}
+.infors{
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
     color: white;
+}
+.tittle_section{
+    font-weight: 700;
+    color: white;
+}
+.platforms{
+    display: flex;
+    gap: 16px;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 24px;
+    background: #5A5A5A;
+    border-radius: 100px;
+}
+.games{
+    display: flex;
+    gap: 40px;
+    /* margin: 64px 0; */
+}
+.games img{
+    width: 260px;
+}
 
-    .infors{
-        display: flex;
-        justify-content: space-between;
-        width: 1160px;
+.latest_news{
+    display: flex;
+    flex-direction: column;
+    margin: 0 140PX;
+    gap: 64px;
+    max-width: 1160px;
+}
+.cards{
+    display: grid;
+    grid-template-areas: 
+    'card1 card2'
+    'card1 card3'
+    ;
+    grid-template-columns: 3.3fr 1fr;
+    gap: 40px;
+    /* grid-auto-rows: 224px; */
+}
+#card_id{
+    border-radius: 16px;
+    background-color: black;
+}
+#card_id img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+.card1{
+    grid-area: card1;
+}
+.card1 .bar_news{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    color: white;
+    gap: 16px;
+}
+.card1 .mini_tittle{
+    font-size: 32px;
+}
+.card1 .mini_text{
+    font-size: 16px;
+    font-weight: 100;
+    color: #5A5A5A;
+}
+.card2{
+    grid-area: card2;
+}
+.card2 .bar_news{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    color: white;
+    gap: 14px;
+}
+.card2 .mini_tittle{
+    font-size: 16px;
+}
+.card2 .mini_text{
+    font-size: 12px;
+    font-weight: 100;
+    color: #5A5A5A;
+}
+.card3{
+    grid-area: card3;
+}
+.card3 .bar_news{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    color: white;
+    gap: 14px;
+}
+.card3 .mini_tittle{
+    font-size: 16px;
+}
+.card3 .mini_text{
+    font-size: 12px;
+    font-weight: 100;
+    color: #5A5A5A;
+}
 
-        h1{
-            font-weight: 700;
-        }
+.rockstar_launcher{
+    max-width: 1160px;
+    background: url(Assets/fundo.png);
+    background-size: cover;
 
-        .platforms{
-            display: flex;
-            gap: 16px;
-
-            p{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 4px 24px;
-                background: #5A5A5A;
-                border-radius: 100px;
-            }
-        }
-    }
-
-    .games{
-        display: flex;
-        gap: 40px;
-        margin: 40px 0;
-        img{
-            width: 260px;
-        }
-    }
-
-    .button{
-        background: #FCAF17;
-        padding: 15px 48px;
-        border-radius: 8px;
-        color: black;
-        font-size: 20px;
-        margin-top: 24px;
-    }
+    margin: 112px 140PX;
+    display: flex;
+    padding: 32px;
+    border-radius: 16px;
+    gap: 40px;
+}
+.Launcher_infors{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.game_launcher{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.game_launcher p{
+    font-size: 41px;
+    font-weight: 900;
+}
+.game_launcher img{
+    width: 137px;
+}
+.info_launcher{
+    font-size: 32px;
+}
+.Launcher_infors .button{
+    width: 260px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.img_red{
+    width: 660px;
 }
