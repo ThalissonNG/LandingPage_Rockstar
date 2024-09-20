@@ -44,10 +44,19 @@ a i{
     gap: 24px;
     background-color: transparent;
 }
+.right a{
+    color: black;
+}
 .button{
+    display: block;
     background: #FCAF17;
     padding: 11px 16px;
     border-radius: 8px;
+    transition: all 0.2s;
+}
+.button:hover{
+    background: #c0840c;
+    transform: scale(1.07);
 }
 .right i{
     color: white;
@@ -63,9 +72,12 @@ a i{
 .games_featured{
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     margin: 112px 140px;
     gap: 64px;
+}
+.games_featured a{
+    color: black;
 }
 .infors{
     display: flex;
@@ -96,6 +108,12 @@ a i{
 }
 .games img{
     width: 260px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.games img:hover{
+    transform: scale(1.07);
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.863));
 }
 
 .latest_news{
@@ -107,7 +125,7 @@ a i{
 }
 .cards{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     'card1 card2'
     'card1 card3'
     ;
@@ -216,6 +234,7 @@ a i{
     align-items: center;
     justify-content: center;
     font-weight: 700;
+    cursor: pointer;
 }
 .img_red{
     width: 660px;
@@ -240,9 +259,16 @@ a i{
     gap: 16px;
 }
 .contacts{
+    /* text-decoration: none; */
     display: flex;
     gap: 24px;
+}
+.contacts a{
     color: #5A5A5A;
+    transition: all 0.2s;
+}
+.contacts a:hover{
+    color: #FCAF17;
 }
 .copyright{
     font-size: 13px;
@@ -250,7 +276,16 @@ a i{
 }
 .social{
     display: flex;
-    gap: 24px;
+    gap: 16px;
     align-items: center;
     font-size: 24px;
+}
+.icon_social{
+    padding: 16px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+.icon_social:hover{
+    background: #111111;
+    border-radius: 50%;
 }
