@@ -236,6 +236,9 @@ a i{
     font-weight: 700;
     cursor: pointer;
 }
+.Launcher_infors a{
+    color: black;
+}
 .img_red{
     width: 660px;
 }
